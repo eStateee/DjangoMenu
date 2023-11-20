@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+{% load templatetags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DjangoMenu</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+{% if menus %}
+    <ul class="ul-reset">
+        {% for menu in menus %}
+            <li>
+                <a href='{{ menu }}'>{{ menu }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% elif menu_name %}
+    {% draw_menu menu_name menu_item %}
+{% endif %}
+
+<h3><a href={% url 'main_menu' %}>В главное меню</a></h3>
+
+</body>
+</html>
