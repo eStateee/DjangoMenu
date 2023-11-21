@@ -12,7 +12,7 @@
     <ul class="ul-reset">
         {% for menu in menus %}
             <li>
-                <a href='{{ menu }}'>{{ menu }}</a>
+                <a href='{{ menu }}' class="list_item">{{ menu }}</a>
             </li>
         {% endfor %}
     </ul>
@@ -20,7 +20,7 @@
     {% draw_menu menu_name menu_item %}
 {% endif %}
 
-<h3><a href={% url 'main_menu' %}>В главное меню</a></h3>
+<h3><a href={% url 'main' %} class="title">В главное меню</a></h3>
 
 </body>
 </html>

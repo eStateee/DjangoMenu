@@ -5,7 +5,7 @@ from django.core.exceptions import ObjectDoesNotExist
 register = template.Library()
 
 
-@register.inclusion_tag('app/menu.html')
+@register.inclusion_tag('template_tags/menu.html')
 def draw_menu(menu_name: str = None, menu_item: str = None):
 
     def get_menu(menu_item: str = None, submenu: list = None):

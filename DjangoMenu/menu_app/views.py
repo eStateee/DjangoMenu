@@ -4,7 +4,7 @@ from menu_app.models import Menu
 
 
 def main(request):
-    return render(request, 'app/index.html', {'menus': Menu.objects.all()})
+    return render(request, 'index.html', {'menus': Menu.objects.all()})
 
 
 def menu(request, path):
@@ -12,5 +12,5 @@ def menu(request, path):
     menu_name = split_path[0]
     menu_item = split_path[-1]
     return render(
-        request, 'template_tags/index.html', {'menu_name': menu_name,
+        request, 'index.html', {'menu_name': menu_name,
                                     'menu_item': menu_item})

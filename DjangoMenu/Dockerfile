@@ -11,5 +11,5 @@ COPY ./req.txt /usr/src/app/req.txt
 RUN pip install -r req.txt
 COPY . /usr/src/app/
 
-
-ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+RUN chmod +x entrypoint.sh
+CMD ["/usr/src/app/entrypoint.sh"]
