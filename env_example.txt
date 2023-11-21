@@ -1,0 +1,13 @@
+ADMIN_USERNAME=admin
+ADMIN_EMAIL=admin@admin.com
+ADMIN_PASSWORD=admin
+
+SECRET_KEY=1t!+#93n31bx-co%c054xs0$erid2ig12z#+#tnpcoq1w@wf@9
+
+
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME=postgres
+DB_HOST=db
+DB_PORT=5432
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=admin
